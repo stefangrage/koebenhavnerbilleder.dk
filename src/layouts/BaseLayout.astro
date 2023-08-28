@@ -1,0 +1,30 @@
+---
+import "../styles/reset.css"
+import "../styles/global.css"
+const { title } = Astro.props;
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{Astro.props.title}</title>
+	</head>
+	<body>
+        <slot />
+		<footer>
+			<p>&copy; 2023 - Mellem linjerne</p>
+		</footer>
+    </body>
+</html>
+
+<style>
+	footer{
+		padding: var(--size-10) 0;
+		color: var(--gray-1);
+		background-color: var(--gray-9);
+		display: flex;
+		justify-content: center;
+	}
+</style>

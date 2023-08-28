@@ -1,0 +1,36 @@
+/*lav noget flot*/
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--size-3)
+}
+
+/*Typografi */
+h1, h2, h3{
+    font-family: var(--font-serif);
+}
+h1{
+    font-size: var(--font-size-fluid-3);
+    line-height: var(--font-lineheight-3);
+    padding: var(--size-7) 0;
+}
+h2{
+    font-size: var(--font-size-fluid-2);
+    line-height: var(--font-lineheight-3);
+    padding: var(--size-5) 0;
+}
+h3{
+    font-size: var(--font-size-fluid-1);
+    line-height: var(--font-lineheight-3);
+    padding: var(--size-5) 0;
+}
+p{
+    font-size: var(--font-siz-fluid-0);
+    line-height: var(--font-lineheight-3);
+    padding: var(--size-4) 0;
+}
+
+/**/
+section{
+    margin-bottom: var(--size-10)
+}

@@ -1,0 +1,31 @@
+---
+const { variant = "primary", size = "large" } = Astro.props;
+---
+
+<button data-variant={variant} data-size={size}>
+  <slot />
+</button>
+
+<style>
+
+
+  /* Variants */
+  [data-variant="primary"] {
+    background-color: var(--gray-11);
+    color: var(--stone-2);
+  }
+
+  [data-variant="secondary"] {
+    background-color: var(--stone-2);
+    color: var(--gray-11);
+  }
+
+  /* Sizes */
+  [data-size="large"] {
+    font-size: var(--font-size-6);
+    padding: var(--size-3);
+  }
+  [data-size="small"] {
+    font-size: var(--font-size-1);
+  }
+</style>
